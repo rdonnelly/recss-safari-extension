@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<title>ReCSS</title>
+		<script type="text/javascript" charset="utf-8">
+			function recssCommand(e) {
+				safari.application.activeBrowserWindow.activeTab.page.dispatchMessage('recss', 'recss');
+			}
+
+			safari.application.addEventListener('command', recssCommand, false);
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>
